@@ -82,7 +82,7 @@
             </div>
               <form action="login process.php" method="POST" id="Student" class="input-group">
                 <input type="text" class="input-field" name="username" placeholder="Student Number" id="studno"  required>
-                <input type="text" class="input-field" name="password" placeholder="Enter Password" id="password" required>
+                <input type="password" class="input-field" name="password" placeholder="Enter Password" id="password" required>
                 <input type="checkbox" class="check-box"><span>Remember Password</span>
                 <button type="submit" class="submit-btn" name="login" id="btn-studlogin">Log In</button>
               </form>

@@ -1,3 +1,9 @@
+<?php
+    session_start();
+    if(isset($_SESSION['id'])){
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -212,6 +218,12 @@
         </section>
         <svg class="waves" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1440 320"><path fill="#00cba9" fill-opacity="0.8" d="M0,32L40,48C80,64,160,96,240,101.3C320,107,400,85,480,106.7C560,128,640,192,720,197.3C800,203,880,149,960,149.3C1040,149,1120,203,1200,224C1280,245,1360,235,1400,229.3L1440,224L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path></svg>
     <script src="js/navbar.js"></script>
-    
+<?php 
+    }
+    else
+    {
+        header("location:login.php");
+    }
+?>
 </body>
 </html>

@@ -16,6 +16,7 @@ if(isset($_POST['login']));
 
          $name=$row['studno'];
          $counter=mysqli_num_rows($query);
+
          $id=$row['id'];
 
          if ($counter == 0)
@@ -25,11 +26,15 @@ if(isset($_POST['login']));
          }
          else
          {
+      
             $_SESSION['id']=$id;
             $_SESSION['studno']=$name;
-
+            $as = $row[2];
+            $as = $_SESSION['firstname'];
+            echo $as;
             echo "<script type='text/javascript'>document.location='home.php'</script>";
          }
+
 
 }
 
